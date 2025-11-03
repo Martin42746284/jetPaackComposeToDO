@@ -1,5 +1,7 @@
-package com.example.jettodo.database
+package com.example.jettodo.repositories
 
+import com.example.jettodo.dao.TodoDao
+import com.example.jettodo.entities.TodoEntity
 import kotlinx.coroutines.flow.Flow
 
 class TodoRepository(private val todoDao: TodoDao) {

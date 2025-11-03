@@ -61,17 +61,17 @@ fun AddEditTodoScreen(
         },
         containerColor = BackgroundLight
     ) { padding ->
-        // ✅ CHANGEMENT ICI : Column avec weight au lieu de Spacer.weight
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .imePadding()  // ✅ imePadding ici
+                .imePadding()
         ) {
             // ✅ Contenu scrollable
             Column(
                 modifier = Modifier
-                    .weight(1f)  // ✅ Prend l'espace disponible
+                    .weight(1f)
                     .verticalScroll(rememberScrollState())
                     .padding(24.dp)
             ) {
@@ -188,7 +188,6 @@ fun AddEditTodoScreen(
                 Spacer(modifier = Modifier.height(24.dp))
             }
 
-            // ✅ BOUTON FIXÉ EN BAS (en dehors du scroll)
             Button(
                 onClick = {
                     if (title.isNotBlank() && selectedLabel.isNotEmpty() && selectedLabel != "Select Label") {

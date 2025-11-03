@@ -1,6 +1,6 @@
 package com.example.jettodo.model
 
-import com.example.jettodo.database.TodoEntity
+import com.example.jettodo.entities.TodoEntity
 
 data class Todo(
     val id: Int,

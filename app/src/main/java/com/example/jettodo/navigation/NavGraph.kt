@@ -54,7 +54,7 @@ fun NavGraph(
         composable(Screen.AddTodo.route) {
             AddEditTodoScreen(
                 todoId = null,
-                onSave = { title, label, priority ->  // Garder comme ça
+                onSave = { title, label, priority ->
                     viewModel.addTodo(title, label, priority)  // viewModel.addTodo accepte Priority
                     navController.popBackStack()
                 },

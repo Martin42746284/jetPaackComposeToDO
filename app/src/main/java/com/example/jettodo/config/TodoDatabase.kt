@@ -1,9 +1,11 @@
-package com.example.jettodo.database
+package com.example.jettodo.config
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.jettodo.dao.TodoDao
+import com.example.jettodo.entities.TodoEntity
 
 @Database(entities = [TodoEntity::class], version = 1, exportSchema = false)
 abstract class TodoDatabase : RoomDatabase() {

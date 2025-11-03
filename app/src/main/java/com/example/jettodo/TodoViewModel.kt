@@ -3,8 +3,8 @@ package com.example.jettodo
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.jettodo.database.TodoDatabase
-import com.example.jettodo.database.TodoRepository
+import com.example.jettodo.config.TodoDatabase
+import com.example.jettodo.repositories.TodoRepository
 import com.example.jettodo.model.Priority
 import com.example.jettodo.model.Todo
 import com.example.jettodo.model.toEntity

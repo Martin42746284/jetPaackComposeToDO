@@ -1,6 +1,7 @@
-package com.example.jettodo.database
+package com.example.jettodo.dao
 
 import androidx.room.*
+import com.example.jettodo.entities.TodoEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
